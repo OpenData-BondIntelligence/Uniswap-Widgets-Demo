@@ -2,9 +2,9 @@ FROM node:16.15.1 as build
  
 WORKDIR /app
 COPY package*.json ./
-RUN npm install
+RUN yarn install
 COPY . .
-RUN npm run build
+RUN yarn run build
  
 # Stage 1 - Serve Frontend Assets
 # FROM nginx:1.19.10
