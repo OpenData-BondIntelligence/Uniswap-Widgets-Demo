@@ -4,7 +4,6 @@ WORKDIR /app
 COPY package*.json ./
 RUN yarn install
 COPY . .
-RUN yarn run build
  
 # Stage 1 - Serve Frontend Assets
 # FROM nginx:1.19.10
