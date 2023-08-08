@@ -1,30 +1,37 @@
-import styles from '../styles/Cards.module.css'
-import { FaGithub, FaDiscord } from 'react-icons/fa'
-import { BsBook, BsInfoCircle } from 'react-icons/bs'
-import { HiOutlineCurrencyDollar } from "react-icons/hi"
-import {FaMoneyCheckAlt} from 'react-icons/fa'
+import styles from '../styles/Cards.module.css';
+import { FaGithub, FaDiscord } from 'react-icons/fa';
+import { BsBook, BsInfoCircle } from 'react-icons/bs';
+import { HiOutlineCurrencyDollar } from 'react-icons/hi';
+import { FaMoneyCheckAlt } from 'react-icons/fa';
 
 export default function DocumentationCards() {
   return (
     <div className={styles.grid}>
-      <a href="https://openexa.ai/" target="_blank" className={styles.card}>
+      <a className={styles.card}>
         <div className={styles.row}>
-          <BsInfoCircle className={styles.logo} />↗
+          <BsInfoCircle className={styles.logo} />
+          <p>Coming soon</p>↗
         </div>
-        <h3>RWA Market Intelligence</h3>
-        <p>Real World Assets (RWA) - Market Research and Cryptocurrency Exploration.</p>
+        <h3>EDX Markets</h3>
+        <p>
+          EDX Markets is a new digital asset marketplace designed to meet the needs of both crypto native firms and the world's largest financial institutions.
+        </p>
       </a>
 
-      <a href="https://token-interface-next-app-wmn5n7rc5q-uc.a.run.app/transactions" target="_blank" className={styles.card}>
+      <a className={styles.card}>
         <div className={styles.row}>
-          <FaMoneyCheckAlt className={styles.logo} />↗
+          {/* <FaMoneyCheckAlt className={styles.logo} />↗ */}
+          <BsInfoCircle className={styles.logo} />
+          <p>Coming soon</p>↗
         </div>
-        <h3>Token Management</h3>
-        <p>Minting of AUT's and OXA's and Management of Tokens.</p>
+        <h3>AUT Marketplace</h3>
+        <p>
+          The AUT Marketplace is an aggregator comprising quotes and data from OpenEXA, Financial Institutions and other tokenized quoted securities.
+        </p>
       </a>
 
-
-      {/* <a href="https://docs.uniswap.org/sdk/widgets/swap-widget" className={styles.card}>
+      {/* 
+      <a href="https://docs.uniswap.org/sdk/widgets/swap-widget" className={styles.card}>
         <div className={styles.row}>
           <BsInfoCircle />↗
         </div>
@@ -42,7 +49,8 @@ export default function DocumentationCards() {
         </div>
       </a> */}
 
-      {/* <a
+      {/* 
+      <a
         href="https://github.com/OpenData-BondIntelligence"
         className={styles.card + ' ' + styles.external}
       >
@@ -55,5 +63,5 @@ export default function DocumentationCards() {
         </div>
       </a> */}
     </div>
-  )
+  );
 }
